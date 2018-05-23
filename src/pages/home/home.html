@@ -1,0 +1,6 @@
+<ion-content>
+  <ion-label fixed>벌금</ion-label>
+  item: {{ (item | async | json) }}
+  <ion-input type="text" [(ngModel)]="money"></ion-input>
+  <button ion-button (click)="save()" block>저장</button>
+</ion-content>
